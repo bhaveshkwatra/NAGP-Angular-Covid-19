@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button (click) = "home()">
+        <mat-icon>home</mat-icon>
+      </button>
+      <span class="menu-spacer"></span>
+      <span id = "title"><h1>COVID19</h1></span>
+      <span id="flag">
+        <img src="https://img.icons8.com/color/48/000000/india.png"/>
+      </span>
+      <span class="header-tab-news">
+          <button mat-button [routerLink]="['news']" routerLinkActive='active'>
+            <mat-icon>inbox</mat-icon>
+            <span class="header-element">Latest News</span> 
+          </button>
+        </span>
+      <span class="header-tab-precautions">
+          <button mat-button [routerLink]="['precautions']" routerLinkActive='active'>
+            <mat-icon>report</mat-icon>
+            <span class="header-element">Precautions</span>
+          </button>
+        </span>
+      <span id="sign-in-tab">
+        <button mat-button (click)="login()">
+          <mat-icon>perm_identity</mat-icon>
+          {{loginStatus | uppercase}}
+      </button>
+    </span>
+    </mat-toolbar-row>
+  </mat-toolbar>

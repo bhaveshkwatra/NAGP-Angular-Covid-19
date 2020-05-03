@@ -1,0 +1,177 @@
+table .state-last-update {
+    background: transparent;
+    transform: translateX(1rem);
+}
+
+.district-table {
+    margin: 25px;
+    border-collapse: separate;
+    border-spacing: 3px;
+}
+
+table tr {
+    transition: background .1s ease-in-out;
+    cursor: pointer;
+}
+
+table td {
+    padding: .25rem;
+    font-size: .9rem;
+    border-radius: 5px;
+}
+
+table tbody .state-last-update td .last-update {
+    text-align: left;
+    align-items: baseline;
+    width: 100%;
+    margin-bottom: auto;
+    margin-top: 25px;
+}
+
+.last-update h3,
+.last-update h6 {
+    margin: 0;
+}
+
+.last-update h6 {
+    color: rgba(37, 202, 16, 0.9);
+    font-weight: 900;
+    text-align: right;
+    font-size: 13px !important;
+}
+
+h6 {
+    font-family: "archia";
+    font-size: 11px!important;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+table tr:hover {
+    background: rgba(108, 117, 125, .12549);
+}
+
+.district-heading th {
+    background: rgba(97, 103, 107, 0.063);
+}
+
+tr {
+    transition: background .1s ease-in-out;
+    cursor: pointer;
+}
+
+th {
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .1s ease-in-out;
+    z-index: 99;
+    font-weight: bold;
+    font-size: .75rem;
+    width: 31%;
+    padding: 8px;
+}
+
+th .heading-content abbr {
+    text-align: right;
+    font-weight: bolder;
+    font-size: 13px;
+    color: black;
+    padding: 30px;
+}
+
+th abbr.confirmed {
+    color: #ff073a !important;
+}
+
+th .active-cases {
+    color: #007bff !important;
+  }
+  
+th abbr.confirmed {
+    color: #ff073a !important;
+}
+  
+th abbr.recovered {
+    color: #28a745 !important;
+}
+
+th abbr.death {
+    color: #6c757d !important;
+}
+
+
+abbr {
+    text-decoration: none;
+}
+
+abbr:hover {
+    cursor: pointer;
+}
+
+table tr:hover {
+    background: rgba(61, 62, 63, 0.125) !important;
+}
+
+td {
+    padding: .25rem;
+    font-size: 13px;
+    vertical-align: middle;
+    border-radius: 5px;
+    text-align: right;
+    padding: 30px;
+    line-height: 1.4;
+    border-top: none;
+    font-weight: 900;
+}
+
+td.col-md-6.district-name {
+    width: 200px;
+}
+
+.district td:first-child {
+    text-align: left;
+}
+
+.district tr:nth-child(odd) {
+    background-color: white !important;
+}
+
+.district {
+    width: 300px;
+    display: table;
+    margin-left: 25px;
+}
+
+.district:last-child {
+    margin-bottom: 25px;
+}
+
+.state-last-update {
+    margin-top: 25px;
+    text-align: right;
+}
+
+.district-heading,
+.state-last-update {
+    width: 300px;
+    display: table;
+    margin-left: 25px;
+}
+
+td.col-md-6.district-cases {
+    text-align: right;
+    width: 300px;
+}
+
+.district:nth-child(odd) td {
+    background: rgb(248, 249, 250);
+}
+
+.district:hover {
+    background-color: rgb(202, 216, 218);
+}
+
+th {
+    text-align: center;
+}

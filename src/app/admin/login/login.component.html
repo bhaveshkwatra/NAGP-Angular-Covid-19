@@ -1,0 +1,34 @@
+<div class="login">
+    <h2 class="login-header">Log In As Admin</h2>
+    <form [formGroup]="loginForm" class="login-container" (ngSubmit)="login(loginForm.value)">
+  
+      <p>
+        <input class="form-input" type="text" placeholder="UserName" formControlName="userName">
+      </p>
+  
+      <mat-error *ngIf="loginForm.get('userName').errors?.required && (loginForm.get('userName').dirty || loginForm.get('userName').touched)">
+        Please Enter the UserName
+      </mat-error>
+
+      <mat-error *ngIf="loginForm.get('userName').errors?.minlength">
+        UserName must have atleast 5 Character
+      </mat-error>      
+
+      <p >
+        <input class="form-input" type="password" placeholder="Password" formControlName="password" autocomplete="on">
+      </p>
+  
+      <mat-error *ngIf="loginForm.get('password').errors?.required && (loginForm.get('password').dirty || loginForm.get('password').touched)">
+        Please Enter the Password
+      </mat-error>
+
+      <mat-error *ngIf="loginForm.get('password').errors?.minlength">
+        Password must have atleast 5 Character
+      </mat-error>   
+
+      <p>
+      <input class = "form-button" type="submit" value="Log in" [disabled]="!loginForm.valid" [ngClass]="{'login-button-disable': !loginForm.valid}">
+      <input class = "form-button" type="reset" value="Reset" (click)="reset()">
+      </p>
+    </form>
+  </div>

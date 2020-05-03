@@ -1,0 +1,276 @@
+table {
+    width: 100%;
+  }
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: .45s;
+  animation-duration: .45s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+h1 {
+  font-family: "archia";
+  font-size: 24px!important;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 12px!important;
+}
+
+h4,
+h5 {
+  font-family: "archia";
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 15px!important;
+}
+
+h1 {
+  margin-top: 0;
+  font-family: "archia";
+  font-size: 24px!important;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.Minigraph,
+.timeseries {
+  margin-top: 25px;
+}
+
+h5.affected-count.fadeInUp {
+  text-align: right;
+  font-size: 14px!important;
+  font-weight: 800;
+  text-align: center;
+  color: rgba(61, 64, 68, 1.6);
+  margin: 0 .25rem .25rem 0;
+}
+
+table {
+  position: relative;
+  align-self: center;
+  font-family: "archia";
+  text-transform: uppercase;
+  border-spacing: 3px 2px;
+  border-collapse: separate;
+}
+
+span.dropdown.rotateDownRight {
+  position: absolute;
+  left: 0;
+  /* top: 58px; */
+  margin-top: 8px;
+  margin-right: 22px;
+}
+
+table .dropdown {
+  position: absolute;
+  left: -.75rem;
+  background: rgba(108, 117, 125, .0627451);
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+table .dropdown svg {
+  position: absolute;
+  top: -2px;
+  left: 1px;
+  width: 11px;
+  stroke-width: 3;
+}
+
+table thead {
+  background: rgba(108, 117, 125, .0627451);
+  color: #343a40;
+  text-align: left;
+  font-size: .75rem;
+}
+
+table thead th.sticky {
+  top: 4px;
+  background: #f1f1f1;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+table thead th {
+  padding: .5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all .1s ease-in-out;
+  z-index: 99;
+  font-weight: bold;
+  font-size: .75rem;
+  width: 31%;
+  padding: 8px;
+}
+
+table thead th .heading-content abbr {
+  text-align: right;
+  font-weight: bolder;
+  font-size: 14px;
+  color: black;
+  padding: 10px;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+abbr:hover {
+  cursor: pointer;
+}
+
+table tbody tr:hover {
+  background: rgba(61, 62, 63, 0.125) !important;
+}
+
+table tbody tr {
+  transition: background .1s ease-in-out;
+  cursor: pointer;
+}
+
+table tbody:nth-child(odd) tr {
+  background-color: white;
+}
+
+
+
+table tbody td:first-child {
+  text-align: left;
+  word-wrap: break-word;
+  margin-left: 10px;
+  text-align: left;
+}
+
+table tbody td {
+  border-top: none;
+}
+
+table tbody {
+  color: #666c72;
+}
+
+table tbody td .deltas {
+  margin-right: 10px;
+  font-size: 12px!important;
+}
+
+table tbody td .deltas svg {
+  width: 9px;
+  height: 9px;
+  stroke-width: 3;
+  vertical-align: -.25px;
+}
+
+table {
+  table-layout: fixed;
+}
+
+table td {
+  overflow: hidden;
+}
+
+table tbody tr.nohover:hover {
+  background-color: white !important;
+}
+
+th .active-cases {
+  color: #007bff !important;
+}
+
+th abbr.confirmed {
+  color: #ff073a !important;
+}
+
+th abbr.recovered {
+  color: #28a745 !important;
+}
+
+th abbr.death {
+  color: #6c757d !important;
+}
+
+@media (min-width: 552px) and (max-width:768px) {
+  table.table.table-striped.table-hover.fadeInUp.col-md-12 {
+      font-size: 12px;
+  }
+}
+
+table thead th .heading-content abbr,
+table thead th {
+  font-size: 13px;
+}
+
+table thead th .heading-content abbr.confirmed,
+table thead th .heading-content abbr.recovered {
+  text-align: left;
+}
+
+table thead th {
+  padding-left: 0;
+  padding-top: 5px;
+}
+
+table tbody tr td {
+  text-align: right;
+  font-size: 13px;
+  padding-left: 3px;
+}
+
+table tbody tr td:first-child {
+  text-align: left;
+}
+
+h3 {
+  font-size: 15px!important;
+}
+
+.meta1 h2 {
+  margin-bottom: 10px;
+  color: #e23028;
+  word-wrap: break-word;
+  font-weight: 900;
+  font-size: 18px!important;
+}
+
+.note {
+  background-color: #eaeaea;
+  margin-bottom: 10px;
+  margin: 10px;
+}
+
+.note h5 {
+  font-size: 13px !important;
+}
+
+.note h5.state-note {
+  color: blue;
+  text-align: center;
+}

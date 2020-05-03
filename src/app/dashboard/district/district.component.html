@@ -1,0 +1,44 @@
+<div class="state-last-update">    
+        <div class="last-update">
+            <h6>Last Updated&nbsp; about 1 hours Ago</h6>
+        </div>
+</div>
+
+<div class="district-heading">
+    <th>
+        <div class="heading-content">
+            <abbr class="dist" title="District">District</abbr>
+        </div>
+    </th>
+    <th>
+        <div class="heading-content">
+            <abbr class="confirmed" title="Confirmed">Confirmed</abbr>
+        </div>
+    </th>
+
+    <th>
+        <div class="heading-content">
+            <abbr class="active-cases" title="Active">Active</abbr>
+        </div>
+    </th>
+
+    <th>
+        <div class="heading-content">
+            <abbr class="recovered" title="Recover">Recovered</abbr>
+        </div>
+    </th>
+
+    <th>
+        <div class="heading-content">
+            <abbr class="death" title="Decreased">Decreased</abbr>
+        </div>
+    </th>
+</div>
+
+<div *ngFor="let data of districtData | keyvalue" class="district">
+    <td class="col-md-6 district-name" style="font-weight: 600;">{{data.value.stateName}}</td>
+    <td class="col-md-6 district-cases">{{data.value.confirmed}}</td>
+    <td class="col-md-6 district-cases">{{data.value.active}}</td>
+    <td class="col-md-6 district-cases">{{data.value.recovered}}</td>
+    <td class="col-md-6 district-cases">{{data.value.deceased}}</td>
+</div>

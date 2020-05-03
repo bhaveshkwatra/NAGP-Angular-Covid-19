@@ -1,0 +1,61 @@
+<div class="login">
+    <h2 class="login-header">News Entry</h2>
+    <form [formGroup]="entryForm" class="login-container" (ngSubmit)="newsSubmit(entryForm.value)">
+        <p>
+           <input class="form-input" type="text" placeholder="Title" formControlName="title">
+        </p>
+
+        <mat-error *ngIf="entryForm.get('title').errors?.required && (entryForm.get('title').dirty || entryForm.get('title').touched)">
+            Please Enter the Title 
+        </mat-error>
+    
+        <mat-error *ngIf="entryForm.get('title').errors?.minlength">
+            Title must have atleast 5 Character
+        </mat-error>
+        
+        <mat-error *ngIf="entryForm.get('title').errors?.maxlength">
+            Title must not exceed 20 Character
+        </mat-error>
+        <p>
+            <input class="form-input" type="text" placeholder="Description" formControlName="description">
+        </p>
+
+        <mat-error *ngIf="entryForm.get('description').errors?.required && (entryForm.get('description').dirty || entryForm.get('description').touched)">
+            Please Enter the Description 
+        </mat-error>
+    
+        <mat-error *ngIf="entryForm.get('description').errors?.minlength">
+            Description must have atleast 15 Character
+        </mat-error>
+        
+        <mat-error *ngIf="entryForm.get('description').errors?.maxlength">
+            Description must not exceed 50 Character
+        </mat-error>
+
+        <p >
+            <textarea class="form-input" placeholder="Summary" formControlName="summary"></textarea>
+        </p>
+
+        <mat-error *ngIf="entryForm.get('summary').errors?.required && (entryForm.get('summary').dirty || entryForm.get('summary').touched)">
+            Please Enter the Summary 
+        </mat-error>
+    
+        <mat-error *ngIf="entryForm.get('summary').errors?.minlength">
+            Summary must have atleast 20 Character
+        </mat-error>
+        
+        <mat-error *ngIf="entryForm.get('summary').errors?.maxlength">
+            Summary must not exceed 100 Character
+        </mat-error>
+
+        <p>
+            <input class="form-input" type="text" placeholder="Image Name" formControlName="imageName">
+        </p>       
+
+        <p>
+            <input class ="form-button" type="submit" value="Submit" [disabled]="!entryForm.valid" [ngClass]="{'submit-button-disable': !entryForm.valid}">   
+            <input class ="form-button" type="reset" value="Reset">   
+        </p>
+            
+    </form>
+</div>   
